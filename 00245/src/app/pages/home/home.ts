@@ -118,27 +118,54 @@ export class Home implements OnInit {
     console.log(
       '👉 Exercício 2: Crie uma variável cidade e depois altere seu valor.'
     );
+
+      let name2: string = "Rodrigo Freitas";
+      console.log(name2);
+      name2 = "João Carlos";
+      console.log(name2);
+
  
         // 💪 Exercício 3
     console.log(
       '👉 Exercício 3: Crie uma variável do tipo any e mude seu tipo três vezes.'
     );
+
+      let variavel: any = "Texto";
+      console.log("String:", variavel);
+      variavel = 42;
+      console.log("Number:", variavel);
+      variavel = true;
+      console.log("Boolean:", variavel);
+
+
         // 💪 Exercício 4
     console.log(
-      '👉 Exercício 1: Crie duas variáveis e mostre no console a soma e subtração delas.'
+      '👉 Exercício 4: Crie duas variáveis e mostre no console a soma e subtração delas.'
     );
  
+      let n1: number = 10;
+      let n2: number = 5;
+      console.log("Soma:" + (n1 + n2));
+      console.log("Subtração: " + (n1 - n2));
+
+
         // 💪 Exercício 5
     console.log(
-      '👉 Exercício 2: Calcule a área de um retângulo (largura * altura).'
+      '👉 Exercício 5: Calcule a área de um retângulo (largura * altura).'
     );
  
+      let largura: number = 8;
+      let altura: number = 6;
+      let area: number = largura * altura;
+      console.log("Área do retângulo:" + area);
+
+
     // 💪 Exercício 6
-    console.log('👉 Exercício 3: Mostre o resto da divisão de 20 por 6.');
+    console.log('👉 Exercício 6: Mostre o resto da divisão de 20 por 6.');
+    
+      let resto: number = 20 % 6;
+      console.log("Resto da divisão: " + resto);
+
   }
-
-
-
-
 
 }
