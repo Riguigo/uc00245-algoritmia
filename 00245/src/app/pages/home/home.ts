@@ -25,6 +25,7 @@ export class Home implements OnInit {
     this.exemploVariaveisETipos();
     this.exemploVariaveisETipos2();
     this.exemploOperadoresAritmeticos()
+    this.exerciciosParaFazer();
   }
 
 
@@ -100,7 +101,42 @@ export class Home implements OnInit {
   // -------------------------------------------------------------------
 
 
-  
+  exerciciosParaFazer = () => {
+    // 💪 Exercício 1
+    console.log(
+      '👉 Exercício 1: Declare 3 variáveis: nome (string), idade (number) e ativo (boolean). Mostre-as no console.'
+    );
+ 
+      let name: string = "Rodrigo Freitas";
+      let idade: number = 20;
+      let ativo: boolean = true;
+
+      console.log("Nome: " + name + "\nIdade: " + idade + "\nAtivo: " + ativo)
+
+
+        // 💪 Exercício 2
+    console.log(
+      '👉 Exercício 2: Crie uma variável cidade e depois altere seu valor.'
+    );
+ 
+        // 💪 Exercício 3
+    console.log(
+      '👉 Exercício 3: Crie uma variável do tipo any e mude seu tipo três vezes.'
+    );
+        // 💪 Exercício 4
+    console.log(
+      '👉 Exercício 1: Crie duas variáveis e mostre no console a soma e subtração delas.'
+    );
+ 
+        // 💪 Exercício 5
+    console.log(
+      '👉 Exercício 2: Calcule a área de um retângulo (largura * altura).'
+    );
+ 
+    // 💪 Exercício 6
+    console.log('👉 Exercício 3: Mostre o resto da divisão de 20 por 6.');
+  }
+
 
 
 
