@@ -26,8 +26,8 @@ export class Home implements OnInit {
     this.exemploVariaveisETipos2();
     this.exemploOperadoresAritmeticos()
     this.exerciciosParaFazer();
+    this.exemploOperadoresComparacao();
   }
-
 
 
 
@@ -93,6 +93,54 @@ export class Home implements OnInit {
     console.log(num1 % num2); // Resto da divisão !!!!!! 
   }
   
+
+
+  /***Operadores de  comparação */
+ 
+  exemploOperadoresComparacao(): void {
+    console.log('\n🧩 3️⃣ OPERADORES DE COMPARAÇÃO');
+    console.log('--------------------------------');
+ 
+    // 📘 Exemplo de código:
+ 
+    let x = 5;
+    let y = 10;
+ 
+    console.log(x == y); // Igualdade
+    console.log(x != y); // Diferença
+    console.log(x > y); // Maior que
+    console.log(x < y); // Menor que
+    console.log(x >= y); // Maior ou igual
+    console.log(x <= y); // Menor ou igual
+ 
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
