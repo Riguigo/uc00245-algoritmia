@@ -7,7 +7,8 @@ import { Console } from 'console';
   templateUrl: './aula01.html',
   styleUrl: './aula01.css',
 })
-export class Home implements OnInit {
+
+export class Aula01 implements OnInit {
   varriavelGlobal: string = ''; // Variavél inicializada mas vazia
   varriavelGlobal2!: string; // Variavél não inicializada
   varriavelGlobal3?: string; // Variavél não inicializada
