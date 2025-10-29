@@ -2,10 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Console } from 'console';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-aula01',
   imports: [],
-  templateUrl: './home.html',
-  styleUrl: './home.css',
+  templateUrl: './aula01.html',
+  styleUrl: './aula01.css',
 })
 export class Home implements OnInit {
   varriavelGlobal: string = ''; // Variavél inicializada mas vazia
