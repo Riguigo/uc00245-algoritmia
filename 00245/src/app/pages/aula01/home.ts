@@ -24,6 +24,7 @@ export class Home implements OnInit {
     this.exemploVariaveisETipos2();
     this.exemploOperadoresAritmeticos();
     this.exemploOperadoresComparacao();
+    this.demonstrarReferencias();
     this.exerciciosParaFazer();
     this.exerciciosParaFazer2();
     this.demonstrarReferencias();
