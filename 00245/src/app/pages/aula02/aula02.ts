@@ -358,8 +358,6 @@ exercicios = () => {
     let respostaLogin: string = logado ? "Utilizador está logado." : "Utilizador está deslogado.";
 
     console.log(respostaLogin);
-
-
   };
 }
  
