@@ -16,6 +16,9 @@ export class Aula02 implements OnInit{
     this.exercicios();
     this.exemploArrays();
     this.exemploFuncoes();
+    this.exercicioArrays2();
+    this.exercicioFuncoes2();
+    this.exercicioCombinacao2();
   }
 
   // ==========================================================
@@ -389,33 +392,172 @@ exercicios = () => {
 
     console.log(respostaLogin);
   };
+
+
+
+
+
+
+
+
+
+  
+
+exercicioArrays2(): void {
+    console.log('--- Exercícios: Arrays ---');
+    console.log('1️⃣ Crie um array de 5 nomes e exiba cada um no console.');
+
+    let nomes = ['Rodrigo', 'Joao', 'Margarida', 'Beatriz', 'Rafael'];
+
+    console.log(" | ", nomes[0], " | ", nomes[1], " | ", nomes[2], " | ", nomes[3], " | ", nomes[4], " | ")
+
+    console.log(
+      '2️⃣ Peça ao utilizador para adicionar e remover elementos de um array.'
+    );
+
+    let lista = ["Ferrari", "Ford"];
+    console.log("Lista inicial:", lista[0], lista [1]);
+
+    lista.push("Renault");
+    console.log("Lista atualizada:", lista[0], lista [1], lista[2]);
+
+    lista.pop(); // remover último
+    console.log("lista depois de remover último elemento:", lista[0], lista [1],);
+
+
+    console.log(
+      '3️⃣ Crie um array de números e imprima somente os números pares.'
+    );
+
+    let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+
+    for (let i = 0; i < numeros.length; i++) {
+      if (numeros[i] % 2 === 0) {
+        console.log(numeros[i]);
+      }
+    }
+  }
+ 
+ 
+ 
+  exercicioFuncoes2(): void {
+      console.log('--- Exercícios: Funções ---');
+    console.log(
+      '1️⃣ Crie uma função que receba dois números e retorne o maior.'
+    );
+
+    function maiorNumero(num1: number, num2: number): number {
+      if (num1 > num2) {
+        return num1;
+      } else {
+        return num2;
+      }
+    }
+
+    console.log("O maior numero é o: ", maiorNumero(10, 15));
+
+
+
+    console.log(
+      '2️⃣ Escreva uma função que calcule a média de um array de números.'
+    );
+
+
+    function calcularMedia(numeros: number[]): number {
+      let resultado = 0;
+      for (let i = 0; i < numeros.length; i++) {
+        resultado += numeros[i];
+      }
+      return resultado / numeros.length;
+    }
+
+    let valores = [16, 8, 2, 3, 35];
+    console.log('Média dos valores do Array:', calcularMedia(valores));
+
+
+    console.log(
+      '3️⃣ Crie uma função que receba um nome e exiba uma saudação personalizada.'
+    );
+
+    function saudacao(nome: string): void {
+      nome = 'Rodrigo';
+
+      console.log("Olá " + nome + "! Tudo bem?");
+    }
+    saudacao('Rodrigo');
+   }
+
+
+
+
+
+
+   
+   
+   exercicioCombinacao2(): void {  
+   console.log('--- Exercícios: Combinação de Conceitos ---');
+    console.log(
+      '1️⃣ Crie uma função que receba um array de notas e mostre quantos alunos foram aprovados.'
+    );
+
+    function contarAprovados(notas: number[]): void {
+      let alunosAprovados = 0;
+      for (let i = 0; i < notas.length; i++) {
+        if (notas[i] >= 10) {
+          alunosAprovados++;
+        }
+      }
+      console.log("Número de alunos aprovados: " + alunosAprovados);
+    }
+
+    let notas = [12, 7, 17, 9, 10, 14];
+    contarAprovados(notas);
+
+
+
+    console.log(
+      '2️⃣ Desenvolva um sistema que calcule o total de uma compra com base em arrays de produtos e preços.'
+    );
+
+
+    function compraArray(): void {
+      let produtos = ["telemovel", "carregador", "capa"];
+      let precos = [1100, 25, 15];
+
+      console.log('--- Lista de Produtos ---');
+      for (let i = 0; i < produtos.length; i++) {
+        console.log(produtos[i] + " - " + precos[i]+ "€"); 
+      }
+
+      let total = precos.reduce((soma, preco) => soma + preco, 0);
+      console.log('-------------------------');
+      console.log("Total da compra: " + total + "€");
+    }
+
+    compraArray();
+
+
+    console.log(
+      '3️⃣ Combine estruturas condicionais e arrays para exibir mensagens diferentes com base em resultados.'
+    );
+
+    function resultadosAlunos(): void {
+      let alunos = ["Rodrigo", "Daniel", "Carlos", "Margarida"];
+      let notas = [15, 9, 18, 7];
+
+      for (let i = 0; i < alunos.length; i++) {
+        if (notas[i] >= 10) {
+          console.log(alunos[i] + " foi aprovado com a nota: " + notas[i]);
+        } else {
+          console.log(alunos[i] + " foi reprovado com a nota: " + notas[i]);
+        }
+      }
+    }
+
+    resultadosAlunos();
+    }
+
+
+
 }
- 
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
