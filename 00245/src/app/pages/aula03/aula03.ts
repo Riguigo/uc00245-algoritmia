@@ -178,7 +178,75 @@ export class Aula03 implements OnInit{
 
 
 
+ exercicioAvalicao = () => {
+    // ======================================================
+    // 1️⃣ EXERCÍCIOS - ESTRUTURAS DE REPETIÇÃO
+    // ======================================================
+    console.log('🧠 Exercícios — Estruturas de Repetição');
+ 
+    console.log(
+      '1️ Faça um loop for que mostre todos os números pares de 0 a 10.'
+    );
 
+    for (let i = 0; 1 <= 10; i++) {
+      if (i % 2 == 0) {
+        console.log("O numero " + i + "é par")
+      }
+    }
+      
+
+    console.log(
+      '2️ Crie um loop while que conte de 5 até 0 e exiba "Contagem regressiva: X".'
+    );
+    console.log(
+      '3️ Escreva um loop do-while que simule 3 tentativas de login.'
+    );
+ 
+
+
+    console.log('🧠 Exercícios — Métodos de Array');
+ 
+    console.log(
+      '4 Crie um array de nomes e use forEach para exibir cada nome em maiúsculas.'
+    );
+    console.log(
+      '5 Crie um array de idades e use filter para retornar apenas as idades acima de 18.'
+    );
+    console.log(
+      '6 Crie um array de números e use reduce para calcular a média.'
+    );
+ 
+
+
+
+    console.log('🧠 Exercícios — Funções Avançadas');
+ 
+    console.log(
+      '7 Crie uma função que receba dois números e retorne a soma e o produto (usando tupla).'
+    );
+    console.log(
+      '8 Crie uma função com valor padrão para calcular o preço total com desconto.'
+    );
+    console.log(
+      '9 Crie uma função que receba uma frase e retorne um objeto com quantidade de palavras e caracteres.'
+    );
+ 
+
+
+
+   console.log('🧠 Exercícios — Controle de Loops');
+ 
+    console.log('1️0 Use "continue" para pular números pares de 0 a 10.');
+    console.log(
+      '11 Use "break" para interromper um loop quando o número for maior que 7.'
+    );
+    console.log(
+      '12 Crie um loop que pare quando encontrar um número negativo em um array.'
+    );
+ 
+
+ 
+  };
 
 
 
