@@ -14,6 +14,7 @@ export class Aula03 implements OnInit{
     this.exemplosMetodosArray();
     this.exemplosFuncoesAvancadas();
     this.exemplosControleLoops();
+    this.exercicioAvalicao();
   }
 
 
@@ -188,9 +189,9 @@ export class Aula03 implements OnInit{
       '1️ Faça um loop for que mostre todos os números pares de 0 a 10.'
     );
 
-    for (let i = 0; 1 <= 10; i++) {
+    for (let i = 0; i <= 10; i++) {
       if (i % 2 == 0) {
-        console.log("O numero " + i + "é par")
+        console.log("O numero " + i + " é par")
       }
     }
       
@@ -198,6 +199,13 @@ export class Aula03 implements OnInit{
     console.log(
       '2️ Crie um loop while que conte de 5 até 0 e exiba "Contagem regressiva: X".'
     );
+
+    let i=5;
+    while (i >= 0) {
+      console.log('Contagem regressiva: ' + i);
+      i--;
+    }
+
     console.log(
       '3️ Escreva um loop do-while que simule 3 tentativas de login.'
     );
