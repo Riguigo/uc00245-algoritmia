@@ -210,6 +210,15 @@ export class Aula03 implements OnInit{
       '3️ Escreva um loop do-while que simule 3 tentativas de login.'
     );
  
+    let tentativas = 0;
+    const maximoTentativas = 3;
+    do {
+      tentativas++;
+      console.log("Falha no login. " + tentativas + " tentativas restantes");
+    } while (tentativas < maximoTentativas);
+
+    console.log('Limite de tentativas atingido.');
+
 
 
     console.log('🧠 Exercícios — Métodos de Array');
@@ -217,12 +226,30 @@ export class Aula03 implements OnInit{
     console.log(
       '4 Crie um array de nomes e use forEach para exibir cada nome em maiúsculas.'
     );
+
+    let nomes: string[] = ['Ana', 'Bruno', 'Carla', 'Diego'];
+    nomes.forEach(nome => console.log(nome.toUpperCase()));
+
+
     console.log(
       '5 Crie um array de idades e use filter para retornar apenas as idades acima de 18.'
     );
+
+    let idades: number[] = [8, 14, 20, 31, 47, 24];
+    let maioresDeIdade = idades.filter(idade => idade >= 18);
+    console.log(maioresDeIdade);
+
+
     console.log(
       '6 Crie um array de números e use reduce para calcular a média.'
     );
+
+    let numeros: number[] = [18, 75, 8, 16, 46];
+    let soma = numeros.reduce((acc, num) => acc + num, 0);  
+    let media = soma / numeros.length;
+    console.log(`Média = ${media}`);
+
+
  
 
 
@@ -232,9 +259,29 @@ export class Aula03 implements OnInit{
     console.log(
       '7 Crie uma função que receba dois números e retorne a soma e o produto (usando tupla).'
     );
+
+    function calcular(n1: number, n2: number): [number, number] {
+    let soma2 = n1 + n2;
+    let produto = n1 * n2;
+    return [soma2, produto];
+    }
+
+    let [soma2, produto] = calcular(10, 7);
+    console.log("Soma: " + soma2 + "\nProduto: " + produto);
+
+
+
     console.log(
       '8 Crie uma função com valor padrão para calcular o preço total com desconto.'
     );
+
+    function calcularDesconto(preco: number, desconto: number = 0.25): number {
+    return preco - preco * desconto;
+    }
+
+    console.log(`Preço final (25% desconto): €$${calcularDesconto(100).toFixed(2)}`);
+
+
     console.log(
       '9 Crie uma função que receba uma frase e retorne um objeto com quantidade de palavras e caracteres.'
     );
