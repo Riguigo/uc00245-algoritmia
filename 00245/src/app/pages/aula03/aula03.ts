@@ -279,35 +279,66 @@ export class Aula03 implements OnInit{
     return preco - preco * desconto;
     }
 
-    console.log(`Preço final (25% desconto): €$${calcularDesconto(100).toFixed(2)}`);
+    console.log("Preço final (25% desconto): € " + calcularDesconto(100));
 
 
     console.log(
       '9 Crie uma função que receba uma frase e retorne um objeto com quantidade de palavras e caracteres.'
     );
  
+    function analisarFrase(frase: string) {
+      let palavras = frase.trim().split(/\s+/);
+
+      return {
+        palavras: palavras.length,
+        caracteres: frase.replace(/\s+/g, '').length 
+      }
+    }
+
+    let resultado = analisarFrase('Bom dia José, tudo bem?');
+    console.log(resultado);
+
 
 
 
    console.log('🧠 Exercícios — Controle de Loops');
  
     console.log('1️0 Use "continue" para pular números pares de 0 a 10.');
+
+    for (let i = 0; i <= 10; i++) {
+      if (i % 2 === 0) {
+        continue;
+      }
+      console.log(i);
+    }
+
+
+
     console.log(
       '11 Use "break" para interromper um loop quando o número for maior que 7.'
     );
+
+    for (let i = 0; i <= 10; i++) {
+      if (i > 7) {
+        break; // interrompe o loop
+      }
+    console.log(i);
+    }
+
+
     console.log(
       '12 Crie um loop que pare quando encontrar um número negativo em um array.'
     );
  
+    let num = [3, 5, 7, 2, -4, 10, 12];
 
- 
-  };
-
-
-
-
- 
-
-
-
+    for (let i = 0; i < num.length; i++) {
+      if (num[i] < 0) {
+        console.log("Um número negativo foi encontrado: " + num[i]);
+        break;
+      }
+      console.log(num[i]);
+    };
+  }
 }
+
